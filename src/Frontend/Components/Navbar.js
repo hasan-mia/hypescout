@@ -2,7 +2,8 @@ import React from 'react';
 import {FaBars} from 'react-icons/fa';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {RiNotification2Line} from 'react-icons/ri';
-import Logo from '../../Assets/logo.png'
+import Logo from '../../Assets/logo.png';
+import User from '../../Assets/user.png'
 
 const Navbar = () => {
     return (
@@ -31,7 +32,7 @@ const Navbar = () => {
                     <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                         <div className='flex w-8 rounded-lg'>
-                            <img src="https://placeimg.com/80/80/people"/>
+                            <img src={User}/>
                         </div>
                     </label>
                     <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded w-52 bg-main">
