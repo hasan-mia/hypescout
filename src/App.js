@@ -1,7 +1,9 @@
+import Navbar from "./Frontend/Components/Navbar";
+
 function App() {
   return (
     <>
-    <h1>hypescout</h1>
+      <Navbar></Navbar>
     </>
   );
 }
