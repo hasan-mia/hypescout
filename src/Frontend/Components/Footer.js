@@ -5,11 +5,9 @@ import {FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/
 const Footer = () => {
     return (
         <footer className='mt-2 lg:mt-6'>
-            <div className="footer p-10 bg-main text-color">
-                <div className='w-6/12 lg:w-3/12'>
-                    <span className="footer-title text-white text-semibold">
-                        <img src={Logo} alt="logo" className='w-full' />
-                    </span> 
+            <div className="grid grid-cols-2 lg:grid-cols-4 justify-center p-10 bg-main text-color gap-2">
+                <div className='flex flex-col'>
+                    <img src={Logo} alt="logo" className='w-40 pb-4 mt-0 pt-0' />
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     Fermentum sed ultricies volutpat rhoncus faucibus sit.
@@ -21,25 +19,25 @@ const Footer = () => {
                         <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a><FaTwitter/></a></li>
                     </ul>
                 </div> 
-                <div className='w-6/12 lg:w-3/12'>
-                    <span className="footer-title text-white text-semibold">Company</span> 
+                <div className='flex flex-col'>
+                    <h2 className="text-xl py-2 mb-2 text-white font-semibold">Company</h2> 
                     <a className="link link-hover">About Us</a> 
                     <a className="link link-hover">Careers</a> 
                     <a className="link link-hover">Blog</a> 
                     <a className="link link-hover">Contact Us</a>
                 </div> 
-                <div className='w-6/12 lg:w-3/12'>
-                    <span className="footer-title text-white text-semibold">Influencer</span> 
+                <div className='flex flex-col'>
+                    <h2 className="text-xl py-2 mb-2 text-white font-semibold">Influencer</h2> 
                     <a className="link link-hover">Join as Influencer</a> 
                     <a className="link link-hover">HypeSocial</a> 
                 </div>
-                <div className='w-6/12 lg:w-3/12'>
-                    <span className="footer-title text-white text-semibold">Advertiser</span> 
+                <div className='flex flex-col'>
+                    <h2 className="text-xl py-2 mb-2 text-white font-semibold">Advertiser</h2> 
                     <a className="link link-hover">Join as Advertiser</a> 
                     <a className="link link-hover">Hypelink</a> 
                 </div>
-                </div> 
-                <div className="footer px-10 py-4 bg-main text-color">
+            </div> 
+            <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center px-10 py-4 bg-main text-color">
                 <div className="items-center grid-flow-col">
                     <p> &copy; Hypescout 2022. All rights reserved</p>
                 </div> 
