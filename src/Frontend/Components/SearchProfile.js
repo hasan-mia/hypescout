@@ -1,7 +1,11 @@
 import { CFormRange } from '@coreui/react';
-import React from 'react';
+import React, { useContext } from 'react';
 import {FiFilter, FiSearch} from 'react-icons/fi';
+import { userContext } from '../../App';
+
 const SearchProfile = () => {
+    // ======Search Handeler=====
+    const {searchHandler} = useContext(userContext)
     return (
         <div className='w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-2 bg-main p-2 my-4 lg:my-6 rounded-md'>
             <div className='w-12/12 lg:w-1/12'>
@@ -9,7 +13,7 @@ const SearchProfile = () => {
             </div>
             <div className='w-12/12 lg:w-9/12'>
                 <div className='bg-main py-2 px-4 relative rounded'>
-                    <input type="text" placeholder="Search Profile" className="rounded p-2 bg-main border border-gray-700 w-full px-2 lg:px-8" />
+                    <input onChange={searchHandler} type="text" placeholder="Search Profile" className="rounded p-2 bg-main border text-color border-gray-700 w-full px-2 lg:px-8" />
                     <p><FiSearch className='text-color z-10 text-xl absolute top-5 mx-2'/></p>
                 </div>
             </div>

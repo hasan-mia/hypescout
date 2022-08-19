@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { userContext } from '../../App';
 import Pagination from '../Components/Pagination';
 import ProfileCard from '../Components/ProfileCard';
+import ResultProfile from '../Components/ResultProfile';
 import SearchProfile from '../Components/SearchProfile';
 
 const Home = () => {
+    const {searchResult} = useContext(userContext)
+    // console.log(searchResult?.length)
     return (
         <main className='px-2 lg:px-4 min-h-screen'>
             <section className='px-2 lg:px-6'>
@@ -11,7 +15,10 @@ const Home = () => {
             </section>
             {/* end search profile */}
             <section className='px-2 lg:px-6'>
-                <ProfileCard/>
+                {
+                searchResult?.length === 0 ? <ProfileCard/> : <ResultProfile/> 
+                }
+                
             </section>
             <section className='px-2 lg:px-6'>
                 <Pagination/>
