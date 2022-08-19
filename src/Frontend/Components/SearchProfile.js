@@ -56,7 +56,7 @@ const SearchProfile = () => {
                         </div>
 
                         <div className='bg-main text-gray-200 py-2'>
-                            <CFormRange min="0" max="100" step="1" label="Influencer's range" defaultValue="3" class="range p-2 range-primary w-full" /> 
+                            <CFormRange min="0" max="100" step="1" label="Influencer's range" defaultValue="3" class="p-2 w-full" /> 
                         </div>
 
                         <div className='bg-main text-gray-200 py-2'><a>Influencer's Gender </a>

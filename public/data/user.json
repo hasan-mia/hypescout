@@ -1,0 +1,87 @@
+[
+	{
+        "id": 1,
+		"name": "Maksudul Hasan",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://fb.me/hasanrafi69",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	},
+    {
+        "id": 1,
+		"name": "Refez Hossain",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://fb.me/hasanrafi69",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	},
+    {
+        "id": 1,
+		"name": "John Doe",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://twitter.com/",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	},
+    {
+        "id": 1,
+		"name": "Neymar Jr.",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://fb.me/hasanrafi69",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	},
+    {
+        "id": 1,
+		"name": "Jonathan Smith",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://fb.me/hasanrafi69",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	},
+    {
+        "id": 1,
+		"name": "John Sina",
+		"location": "Dhaka Bangladesh",
+		"join": "Joined On: July 26th, 2022",
+		"img": "https://i.imgur.com/2Cyr4rG.png",
+        "facebook": "https://fb.me/hasanrafi69",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com/in/hasan-mia",
+        "instagram": "https://www.instagram.com/amarmarket",
+		"follwers": "12k",
+        "category": "Fasion",
+        "gender": "Male"
+	}
+	
+]
