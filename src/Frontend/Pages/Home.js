@@ -1,4 +1,5 @@
 import React from 'react';
+import Pagination from '../Components/Pagination';
 import ProfileCard from '../Components/ProfileCard';
 import SearchProfile from '../Components/SearchProfile';
 
@@ -11,6 +12,9 @@ const Home = () => {
             {/* end search profile */}
             <section className='px-2 lg:px-6'>
                 <ProfileCard/>
+            </section>
+            <section className='px-2 lg:px-6'>
+                <Pagination/>
             </section>
         </main>
     );

@@ -20,8 +20,8 @@ const SearchProfile = () => {
                     </label>
 
                     <ul tabindex="0" className="menu menu-compact dropdown-content mt-6 p-2 shadow bg-main rounded w-52 absolute right-0 bg-main">
-                        <div className='bg-main text-gray-200 px-1 border-b border-gray-700'><a>Filter Options</a></div>
-                        <div className='bg-main text-gray-200 px-1'><a>Influencer’s industry</a>
+                        <div className='bg-main text-gray-200 px-1 py-2 border-b border-gray-700 text-xl'><a>Filter Options</a></div>
+                        <div className='bg-main text-gray-200 px-1 py-2'><a>Influencer’s industry</a>
                         <select class="select select-bordered w-full max-w-xs bg-black text-color">
                             <option disabled selected>Selection Options</option>
                             <option>Normal Apple</option>
@@ -30,7 +30,7 @@ const SearchProfile = () => {
                         </select>
                         </div>
 
-                        <div className='bg-main text-gray-200 px-1'><a>Influencer’s Country</a>
+                        <div className='bg-main text-gray-200 px-1 py-2'><a>Influencer’s Country</a>
                         <select class="select select-bordered w-full max-w-xs bg-black text-color">
                             <option disabled selected>Selection Options</option>
                             <option>Normal Apple</option>
@@ -38,7 +38,7 @@ const SearchProfile = () => {
                             <option>Normal Tomato</option>
                         </select>
                         </div>
-                        <div className='bg-main text-gray-200 px-1'><a>Audience’s Country</a>
+                        <div className='bg-main text-gray-200 px-1 py-2'><a>Audience’s Country</a>
                         <select class="select select-bordered w-full max-w-xs bg-black text-color">
                             <option disabled selected>Selection Options</option>
                             <option>Normal Apple</option>
@@ -46,7 +46,7 @@ const SearchProfile = () => {
                             <option>Normal Tomato</option>
                         </select>
                         </div>
-                        <div className='bg-main text-gray-200 px-1'><a>Influencer’s Social Media Platform</a>
+                        <div className='bg-main text-gray-200 px-1 py-2'><a>Influencer’s Social Media Platform</a>
                         <select class="select select-bordered w-full max-w-xs bg-black text-color">
                             <option disabled selected>Selection Options</option>
                             <option>Normal Apple</option>
@@ -55,14 +55,20 @@ const SearchProfile = () => {
                         </select>
                         </div>
 
-                        <div className='bg-main text-gray-200'>
-                            <CFormRange min="0" max="100" step="1" label="Influencer's range" defaultValue="3" class="range range-primary w-full" /> 
+                        <div className='bg-main text-gray-200 py-2'>
+                            <CFormRange min="0" max="100" step="1" label="Influencer's range" defaultValue="3" class="range p-2 range-primary w-full" /> 
                         </div>
 
-                        <div className='bg-main text-gray-200'><a>Influencer's Gender </a>
+                        <div className='bg-main text-gray-200 py-2'><a>Influencer's Gender </a>
                             <div className="flex flex-row gap-4 justify-center items-center py-2">
-                            <input type="radio" name="radio-2" class="radio radio-primary" checked />
-                            <input type="radio" name="radio-2" class="radio radio-primary" />
+                            <input type="radio" name="radio-2" class="radio radio-primary" checked /> <span>Male</span>
+                            <input type="radio" name="radio-2" class="radio radio-primary" /> <span>Female</span>
+                            </div>
+                        </div>
+                        <div className='bg-main text-gray-200 py-2'>
+                            <div class="btn-group justify-end gap-1 py-2">
+                                <button class="py-2 px-4 bg-slate-900 rounded">Reset</button>
+                                <button class="py-2 px-4 bg-slate-900 rounded btn-active">Apply</button>
                             </div>
                         </div>
                     </ul>
