@@ -7,9 +7,9 @@ import SearchProfile from '../Components/SearchProfile';
 
 const Home = () => {
     const {searchResult} = useContext(userContext)
-    // console.log(searchResult?.length)
     return (
         <main className='px-2 lg:px-4 min-h-screen'>
+            {/* <ResultProfile/>  */}
             <section className='px-2 lg:px-6'>
                 <SearchProfile/>
             </section>

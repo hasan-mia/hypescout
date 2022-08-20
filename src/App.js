@@ -6,13 +6,16 @@ import Home from "./Frontend/Pages/Home";
 import useUsers from "./Hooks/useUsers";
 
 // =======Create Contex=====
-export const userContext = createContext()
+export const userContext = createContext(null)
 
 function App() {
   // =======Get Usrs Data======
   const {users, isLoad} = useUsers();
   const [searchText, setSearchText] = useState();
   const [searchResult, setSearchResult] = useState();
+  
+  // ==========Set Theme=======
+  const [theme, setTheme] = useState("dark");
 
   // =========Search handler========
   const searchHandler = (e) =>{
@@ -28,13 +31,16 @@ function App() {
   }, [searchText]);
 
   return (
-    <userContext.Provider value={{users, isLoad, searchResult, searchHandler}}>
-      <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Home/>}> </Route>
-      </Routes>
-      <Footer></Footer>
+    <userContext.Provider value={{users, isLoad, searchResult, searchHandler, theme, setTheme}}>
+      <div id={theme}>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home/>}> </Route>
+        </Routes>
+        <Footer></Footer>
+      </div>
     </userContext.Provider>
+    
   );
 }
 

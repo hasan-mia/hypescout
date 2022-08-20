@@ -7,21 +7,41 @@ body {
   font-family: 'Sen', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
 }
-
-.bg-main{
-  background-color: #17181B ;
+/* ========Light Theme======= */
+#light{
+  background-color: #fff;
 }
-.bg-hover{
+#light .bg-main{
+  background-color: #F7F7F8 ;
+}
+#light .bg-hover{
   background-color: #202124;
 }
-.text-color{
-  color: #637381;
+#light .text-color{
+  color: #202124;
 }
-.btn-bg{
+#light .btn-bg{
   background-color: #564FB1;
 }
+
+/* ========Dark Theme====== */
+#dark{
+  background-color: #000 ;
+}
+#dark .bg-main{
+  background-color: #17181B ;
+}
+#dark .bg-hover{
+  background-color: #202124;
+}
+#dark .text-color{
+  color: #637381;
+}
+#dark .btn-bg{
+  background-color: #564FB1;
+}
+
 
 /* Scrollbar Design */
  /* Scroll */

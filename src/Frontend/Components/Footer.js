@@ -13,28 +13,28 @@ const Footer = () => {
                     Fermentum sed ultricies volutpat rhoncus faucibus sit.
                     </p>
                     <ul className="menu menu-horizontal p-0">
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a><FaFacebookSquare/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a><FaInstagram/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a><FaLinkedin/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a><FaTwitter/></a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaFacebookSquare/></a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaInstagram/></a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaLinkedin/></a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaTwitter/></a></li>
                     </ul>
                 </div> 
                 <div className='flex flex-col'>
                     <h2 className="text-xl py-2 mb-2 text-white font-semibold">Company</h2> 
-                    <a className="link link-hover">About Us</a> 
-                    <a className="link link-hover">Careers</a> 
-                    <a className="link link-hover">Blog</a> 
-                    <a className="link link-hover">Contact Us</a>
+                    <a href="#" className="link link-hover">About Us</a> 
+                    <a href="#" className="link link-hover">Careers</a> 
+                    <a href="#" className="link link-hover">Blog</a> 
+                    <a href="#" className="link link-hover">Contact Us</a>
                 </div> 
                 <div className='flex flex-col'>
                     <h2 className="text-xl py-2 mb-2 text-white font-semibold">Influencer</h2> 
-                    <a className="link link-hover">Join as Influencer</a> 
-                    <a className="link link-hover">HypeSocial</a> 
+                    <a href="#" className="link link-hover">Join as Influencer</a> 
+                    <a href="#" className="link link-hover">HypeSocial</a> 
                 </div>
                 <div className='flex flex-col'>
                     <h2 className="text-xl py-2 mb-2 text-white font-semibold">Advertiser</h2> 
-                    <a className="link link-hover">Join as Advertiser</a> 
-                    <a className="link link-hover">Hypelink</a> 
+                    <a href="#" className="link link-hover">Join as Advertiser</a> 
+                    <a href="#" className="link link-hover">Hypelink</a> 
                 </div>
             </div> 
             <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center px-10 py-4 bg-main text-color">
@@ -43,9 +43,9 @@ const Footer = () => {
                 </div> 
                 <div className="md:place-self-center md:justify-self-end">
                     <ul className="menu menu-horizontal p-0">
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a>Terms & Conditions</a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a>Privacy</a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a>Sitemap</a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Terms & Conditions</a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Privacy</a></li>
+                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
