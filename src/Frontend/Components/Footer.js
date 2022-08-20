@@ -16,10 +16,10 @@ const Footer = () => {
                     Fermentum sed ultricies volutpat rhoncus faucibus sit.
                     </p>
                     <ul className="menu menu-horizontal p-0">
-                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaFacebookSquare/></a></li>
-                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaInstagram/></a></li>
-                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaLinkedin/></a></li>
-                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaTwitter/></a></li>
+                        <li className='text-md lg:text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaFacebookSquare/></a></li>
+                        <li className='text-md lg:text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaInstagram/></a></li>
+                        <li className='text-md lg:text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaLinkedin/></a></li>
+                        <li className='text-md lg:text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaTwitter/></a></li>
                     </ul>
                 </div> 
                 <div className='flex flex-col'>
@@ -40,15 +40,15 @@ const Footer = () => {
                     <a href="#" className="link link-hover">Hypelink</a> 
                 </div>
             </div> 
-            <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center px-10 py-4 bg-main text-color">
+            <div className="flex flex-col-reverse lg:flex-row justify-center lg:justify-between items-center px-2 lg:px-10 py-4 bg-main text-color">
                 <div className="items-center grid-flow-col">
                     <p> &copy; Hypescout 2022. All rights reserved</p>
                 </div> 
                 <div className="md:place-self-center md:justify-self-end">
                     <ul className="menu menu-horizontal p-0">
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Terms & Conditions</a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Privacy</a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Sitemap</a></li>
+                        <li className='text-md lg:text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Terms & Conditions</a></li>
+                        <li className='text-md lg:text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Privacy</a></li>
+                        <li className='text-md lg:text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
             </div>

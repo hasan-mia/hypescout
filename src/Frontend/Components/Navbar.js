@@ -23,17 +23,17 @@ const Navbar = () => {
 
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Dashboard</a></li>
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Campaign</a></li>
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Hypesocial</a></li>
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Insights</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}><a href="#">Dashboard</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}><a href="#">Campaign</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}><a href="#">Hypesocial</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}><a href="#">Insights</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <ul className="menu menu-horizontal p-0">
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#"><RiNotification2Line className='text-2xl'/></a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}><a href="#"><RiNotification2Line className='text-lg md:text-2xl p-0'/></a></li>
                     {/* ========Theme Togle======= */}
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold`}>
                         <label className="swap swap-rotate">
                         <input type='checkbox' onChange={toggleTheme} checked={theme === "dark"} />
                             <svg className="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ const Navbar = () => {
                         </label>
                     </li>
                     
-                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold sm-none`}><a href="#">Hi! Rakib</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-sm lg:text-lg hover:font-semibold sm-none`}><a href="#">Hi! Rakib</a></li>
                 </ul>
                 <div className="flex gap-2">
                     <div className="dropdown dropdown-end">
@@ -65,7 +65,7 @@ const Navbar = () => {
                  {/* =====Mobile Menu==== */}
                 <div className="dropdown">
                     <label tabindex="0" className="cursor-pointer lg:hidden">
-                        <FaBars className="text-gray-200 text-2xl"/>
+                        <FaBars className="text-gray-200 text-lg md:text-2xl p-0"/>
                     </label>
 
                     <ul tabindex="0" className="menu menu-compact dropdown-content mt-6 p-2 shadow bg-base-100 rounded w-52 absolute right-0 bg-main">
