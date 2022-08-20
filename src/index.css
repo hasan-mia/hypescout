@@ -16,13 +16,25 @@ body {
   background-color: #F7F7F8 ;
 }
 #light .bg-hover{
-  background-color: #202124;
+  background-color: #bebfc5;
 }
 #light .text-color{
   color: #202124;
 }
 #light .btn-bg{
   background-color: #564FB1;
+}
+#light .text-profile{
+  color: #231F20;
+}
+#light .text-white{
+  color: #231F20;
+}
+#light .bg-black{
+  color: #fff;
+}
+#light .text-gray-200{
+  color: #231F20;
 }
 
 /* ========Dark Theme====== */
@@ -40,6 +52,9 @@ body {
 }
 #dark .btn-bg{
   background-color: #564FB1;
+}
+#dark .text-profile{
+  color: #fff;
 }
 
 

@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react';
 import {FaBars} from 'react-icons/fa';
-import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {RiNotification2Line} from 'react-icons/ri';
 import Logo from '../../Assets/logo.png';
+import LogoDark from '../../Assets/logo-dark.png';
 import User from '../../Assets/user.png'
 import { userContext } from '../../App';
 import { Link } from 'react-router-dom';
@@ -18,22 +18,22 @@ const Navbar = () => {
             <div className="navbar">
            
             <div className="navbar-start">
-                <Link to="/" className="btn btn-ghost normal-case text-xl"><img src={Logo} alt="logo" className='w-full' /></Link>
+                <Link to="/" className="btn btn-ghost normal-case text-xl"><img src={ theme ==="dark"? Logo : LogoDark} alt="logo" className='w-full' /></Link>
             </div>
 
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Dashboard</a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Campaign</a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Hypesocial</a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Insights</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Dashboard</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Campaign</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Hypesocial</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#">Insights</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
                 <ul className="menu menu-horizontal p-0">
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><RiNotification2Line className='text-2xl'/></a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}><a href="#"><RiNotification2Line className='text-2xl'/></a></li>
                     {/* ========Theme Togle======= */}
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold`}>
                         <label className="swap swap-rotate">
                         <input type='checkbox' onChange={toggleTheme} checked={theme === "dark"} />
                             <svg className="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -45,7 +45,7 @@ const Navbar = () => {
                         </label>
                     </li>
                     
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold sm-none'><a href="#">Hi! Rakib</a></li>
+                    <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-md hover:font-semibold sm-none`}><a href="#">Hi! Rakib</a></li>
                 </ul>
                 <div className="flex gap-2">
                     <div className="dropdown dropdown-end">
@@ -55,9 +55,9 @@ const Navbar = () => {
                         </div>
                     </label>
                     <ul tabindex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded w-52 bg-main">
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Profile</a></li>
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Settings</a></li>
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Logout</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Profile</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Settings</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Logout</a></li>
                     </ul>
                     </div>
                 </div>
@@ -69,10 +69,10 @@ const Navbar = () => {
                     </label>
 
                     <ul tabindex="0" className="menu menu-compact dropdown-content mt-6 p-2 shadow bg-base-100 rounded w-52 absolute right-0 bg-main">
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Dashboard</a></li>
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Campaign</a></li>
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Hypesocial</a></li>
-                        <li className='text-lg text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#">Insights</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Dashboard</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Campaign</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Hypesocial</a></li>
+                        <li className={`${theme === 'dark' ? 'text-color hover:text-gray-200 hover:bg-slate-800' : 'hover:bg-slate-900 text-gray-800 hover:text-gray-100'} text-lg hover:font-semibold`}><a href="#">Insights</a></li>
                     </ul>
                 </div>
             </div>

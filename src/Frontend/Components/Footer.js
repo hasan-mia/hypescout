@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from '../../Assets/logo.png';
+import LogoDark from '../../Assets/logo-dark.png';
 import {FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter} from 'react-icons/fa'
+import { userContext } from '../../App';
 
 const Footer = () => {
+    const {theme, setTheme} = useContext(userContext);
     return (
         <footer className='mt-2 lg:mt-6'>
             <div className="grid grid-cols-2 lg:grid-cols-4 justify-center p-10 bg-main text-color gap-2">
                 <div className='flex flex-col'>
-                    <img src={Logo} alt="logo" className='w-40 pb-4 mt-0 pt-0' />
+                    <img src={ theme ==="dark"? Logo : LogoDark} alt="logo" className='w-40 pb-4 mt-0 pt-0' />
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     Fermentum sed ultricies volutpat rhoncus faucibus sit.
                     </p>
                     <ul className="menu menu-horizontal p-0">
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaFacebookSquare/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaInstagram/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaLinkedin/></a></li>
-                        <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaTwitter/></a></li>
+                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaFacebookSquare/></a></li>
+                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaInstagram/></a></li>
+                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaLinkedin/></a></li>
+                        <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold'><a href="#"><FaTwitter/></a></li>
                     </ul>
                 </div> 
                 <div className='flex flex-col'>

@@ -9,7 +9,7 @@ const SearchProfile = () => {
     return (
         <div className='w-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-2 bg-main p-2 my-4 lg:my-6 rounded-md'>
             <div className='w-12/12 lg:w-1/12'>
-            <p className='text-white text-xl font-semibold'>Profile(100)</p>
+            <p className='text-profile text-xl font-semibold'>Profile(100)</p>
             </div>
             <div className='w-12/12 lg:w-9/12'>
                 <div className='bg-main py-2 px-4 relative rounded'>
@@ -20,7 +20,7 @@ const SearchProfile = () => {
             <div className='w-12/12 lg:w-2/12'>
                 <div className="dropdown">
                     <label tabindex="0" className="cursor-pointer">
-                        <button className='text-white text-xl flex items-center p-2 btn-bg rounded'><FiFilter/> Advance Filter</button>
+                        <button className='text-gray-100 text-xl flex items-center p-2 btn-bg rounded'><FiFilter/> Advance Filter</button>
                     </label>
 
                     <ul tabindex="0" className="menu menu-compact dropdown-content mt-6 p-2 shadow bg-main rounded w-52 absolute right-0 bg-main">

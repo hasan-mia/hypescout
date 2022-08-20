@@ -19,10 +19,10 @@ const ResultProfile = () => {
                 <p className='flex items-center gap-1 text-md'><IoLocation/>{user?.location}</p>
                 <p className='flex items-center gap-1 text-md'><BsClock/>{user?.join}</p>
                 <ul className="flex gap-2">
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.facebook} target="_blank"><FaFacebookSquare/></a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.instagram} target="_blank"><FaInstagram/></a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.linkedin} target="_blank"><FaLinkedin/></a></li>
-                    <li className='text-md text-color hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.twitter} target="_blank"><FaTwitter/></a></li>
+                    <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.facebook} target="_blank"><FaFacebookSquare/></a></li>
+                    <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.instagram} target="_blank"><FaInstagram/></a></li>
+                    <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.linkedin} target="_blank"><FaLinkedin/></a></li>
+                    <li className='text-md text-gray-500 hover:text-gray-200 hover:bg-slate-800 hover:font-semibold p-1'><a href={user?.twitter} target="_blank"><FaTwitter/></a></li>
                 </ul>
                 <div className="grid grid-cols-3 gap-2 mt-2">
                     <div className="bg-main border border-dashed border-gray-500 p-2 text-sm">
